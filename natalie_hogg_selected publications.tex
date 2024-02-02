@@ -1,0 +1,33 @@
+\documentclass[11pt]{article} 
+\input{cv_style.tex} 
+
+\begin{document}
+	
+	\title{Dr. Natalie B. Hogg} % Print the main header
+	
+	\textbf{Postdoctoral researcher in cosmology at the \href{https://www.lupm.in2p3.fr/}{Laboratoire Univers et Particules}, Universit\'e de Montpellier}\\ \\
+	\textbf{Email:} \href{mailto:natalie.hogg@lupm.in2p3.fr}{natalie.hogg@lupm.in2p3.fr} | \textbf{Phone:} +33 7 66 72 42 18 | \textbf{Website:} \href{nataliebhogg.com}{nataliebhogg.com} | \textbf{Github:} \href{https://github.com/nataliehogg}{\faGithub}
+
+    \section{Selected publications}
+    
+    I would like to highlight the following publications of mine for further discussion: ``Measuring line-of-sight shear with Einstein rings: a proof of concept''~\cite{Hogg:2022ycw}, ``Constraints on dark energy from TDCOSMO \& SLACS lenses''~\cite{Hogg:2023khs} and  ``Shan--Chen interacting vacuum cosmology''~\cite{Hogg:2021yiz}.
+    
+    \subsection{Measuring line-of-sight shear with Einstein rings: a proof of concept}
+    This paper was my first work on the line-of-sight shear in strong gravitational lensing. During the work, I led the implementation of the line-of-sight effects derived by Fleury et al. \cite{Fleury:2021tke} in the open-source software \texttt{lenstronomy}, allowing me to produce mock strong lensing images with line-of-sight effects included in the model. In parallel to this, I developed the \texttt{analosis} wrapper for \texttt{lenstronomy}, a Python package which allowed me to systematically create and analyse large catalogues of mock images. \\
+    
+    I found that the line-of-sight shear is measurable from such images, provided that the mass profile of the lens is modelled with sufficient complexity. I also found evidence for a flexion signal (the higher-order, beyond shear distortion) when analysing a strong lensing image produced in a cosmological volume randomly populated with dark matter haloes, indicating that such a signal may be observable in real data. These results provided a crucial demonstration of the validity of the line-of-sight formalism, vital for the development of this observable as a probe of cosmology.
+    
+    \subsection{Constraints on dark energy from TDCOSMO \& SLACS lenses}
+    This paper, my first as single author, highlights my ability to carry out a research project from start to finish on my own initiative. Following discussions at the ``Lensing at Different Scales'' workshop at the University of Chicago in August 2023, where I was an invited speaker, I realised that the TDCOSMO and SLACS strong lensing data had not been used to obtain constraints on different cosmological models in combination with other datasets. I therefore wrote an external likelihood package for the \texttt{Cobaya} Bayesian analysis software, implementing the TDCOSMO hierarchical likelihood \cite{Birrer:2020tax} for public use. \\
+    
+    To demonstrate the effectiveness of the implementation, I used the TDCOSMO and SLACS data, with this hierarchical likelihood, to obtain constraints on dynamical dark energy via the $w_0w_a$ parameterisation. I found that, with the strong lensing data alone, a strongly phantom equation of state is preferred ($w<-1$), likely due to a geometrical degeneracy between this parameter, the expansion rate $H_0$ and the dimensionless matter density $\Omega_{\rm m}$. When other cosmological data such as the Planck 2018 cosmic microwave background power spectra and the Pantheon supernova catalogue are added, a cosmological constant ($w=-1$) is once again favoured. This work has recently been accepted for publication as a Letter in Monthly Notices of the Royal Astronomical Society.
+    
+    \subsection{Shan--Chen interacting vacuum cosmology}
+    This work was the final publication of my PhD thesis and I consider it to be the culmination of and best representation of my PhD work as a whole. In this work, I built a new model of interacting dark energy whose interaction was constructed to mimic the Shan--Chen fluid dark energy, itself a dark energy model whose equation of state was inspired from studies in fluid dynamics  \cite{Shan1993, Bini:2014pmk, Bini:2016wqr}. The Shan--Chen interacting vacuum dark energy is particularly interesting since it has an extremely rich cosmological phenomenology, due in part to the non-linear nature of the interaction. \\
+    
+    I identified regions of parameter space which yielded different cosmic evolution histories, such as the evolution to late-time dark energy domination, or evolution between two cosmological constants. The model also has the potential to be used as an early dark energy, thanks to the energy scale present in the interaction, which can be chosen to be whatever energy scale the interaction is desired to be active at. I confronted a subset of the Shan--Chen interacting vacuum models with observational data, performing an MCMC analysis to fit the model parameters. I found that, in general, the $\Lambda$CDM model is a better fit to observational data.
+    
+    \bibliographystyle{unsrturl}
+    \bibliography{selectedpapers}
+	
+\end{document}
