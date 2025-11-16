@@ -1,6 +1,8 @@
 \documentclass[11pt]{letter}
 \usepackage{ebgaramond}
 \usepackage{geometry}
+\usepackage[super]{nth}
+\usepackage[dvipsnames]{xcolor}
 \geometry{
 	a4paper,
 	total={170mm,257mm},
@@ -9,6 +11,15 @@
 	bottom=20mm,
 	top=20mm,
 }
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black,
+	filecolor=black,
+	urlcolor=black,
+}
 
 \begin{document}
 % If you want headings on subsequent pages,
@@ -16,23 +27,26 @@
 % \pagestyle{headings}
 
 \begin{letter}{}
-\address{Dr. Natalie B. Hogg,\\ Laboratoire Universe et Particules,\\
-Universit\'e de Montpellier,\\
-Montpellier, France, 34070.\\
-Email: natalie.hogg@lupm.in2p3.fr}
+\address{Dr. Natalie B. Hogg,\\ Institute of Astronomy,\\
+University of Cambridge,\\
+Madingley Road, Cambridge, UK.\\
+Email: nbh25@cam.ac.uk}
 
-\opening{Dear Dr. Starck and Dr Bournaud,}
+\opening{Dear Prof. Hook, Prof. Nichol and Dr. Nightingale,}
 
-I am writing to apply for the permanent research position in cosmology at CosmoStat. This position was brought to my attention by my colleague Dr. Vivian Poulin. I am currently a postdoctoral researcher at the Laboratoire Univers et Particules (LUPM) at the Universit\'e de Montpellier, working with Prof. Julien Larena and Dr. Pierre Fleury in the field of gravitational lensing and its application in cosmology.
+I am writing to request transfer of my Euclid Consortium membership from Euclid France to Euclid UK. This is because as of \nth{6} October I have moved from France to the UK and am now affiliated with a UK institution. Previously I was a postdoc at the Laboratoire univers et particules, a mixed research unit attached to IN2P3/CNRS and the University of Montpellier; I am now a postdoc at the Institute of Astronomy, University of Cambridge.
 
-During my PhD (University of Portsmouth, 2021), I led two projects on the development and analysis of alternative dark energy models, showing how, from a statistical standpoint, these models are disfavoured by the data compared to $\Lambda$CDM. During the course of these projects, I became an expert in the use of Boltzmann codes and MCMC parameter inference methods. Alongside my thesis work, I also led a project on forecasting the constraints on violations of the distance duality relation that future standard siren observations will provide.
+Within Euclid, I am currently active in the Strong Lensing Science Working Group, having participated in visual inspection tasks for the ERO and Q1 data, as well as making minor contributions to some of the associated papers. Beyond strong lens discovery and classification, I intend to eventually lead a key project to measure the correlation between weak lensing and strong lensing shear in Euclid data, however, there are both theoretical and computational challenges, particularly surrounding strong lens modelling and parameter inference, to be overcome before this measurement can be attempted. The latter is a key focus of my new postdoc position.
 
-As a postdoc, I have successfully applied my analysis and programming skills to the field of gravitational lensing, and specifically the interface between the strong and weak lensing regimes. I led the implementation of a new formalism to describe the weak lensing of strong lensing (also known as ``line-of-sight effects'') in the public strong lensing software \texttt{lenstronomy}, becoming one of the top three contributors to the code. Furthermore, I have demonstrated how the so-called line-of-sight shear is systematically measurable from strong lensing images, paving the way for its use as a powerful new cosmological probe, which I have explained in more detail in my research statement.
+I am also currently contributing to the DR1-KP-TH2 project, which is investigating potential departures from the distance-duality relation in Euclid DR1 data. This relation states that luminosity and angular diameter distances must coincide under certain assumptions, the violation of which may indicate the presence of new physics. Within this project, I have been contributing to writing and reviewing the code we will use for the analysis, and will participate in the data analysis and paper writing at the appropriate time.
 
-My recent research experience in aspects of both weak and strong lensing, as well as my past experience in diverse areas of cosmology
-, makes me an ideal candidate for the advertised role. I would also look forward to once again taking an active role in the wider cosmology community in Saclay, as I did while a postdoc at IPht, when I initiated and led a new series of joint journal clubs between the CosmoStat group and the cosmology group at IPhT, which continue to this day.
+Thank you for your consideration in this matter.
 
-Thank you for your time and consideration, and I look forward to hearing from you in due course.s
+%I am currently a postdoctoral researcher at the Laboratoire Univers et Particules (LUPM) at the Universit\'e de Montpellier, working with Prof. Julien Larena and Dr. Pierre Fleury in the field of gravitational lensing and its application to cosmology. In particular, our team is pioneering the study of the so-called line-of-sight shear -- a robust parameterisation of the effect of weak lensing on strong lensing images which has the potential to provide independent constraints on cosmological parameters such as $\sigma_8$.
+%
+%The Euclid mission is expected to observe tens of thousands of strong gravitational lenses, an ideal dataset from which to measure the line-of-sight shear and obtain high precision cosmological constraints. I have expertise in both the theoretical aspects of strong lensing and in modelling strong lensing images with statistical techniques such as MCMC sampling. In particular, I led the work which demonstrated that the line-of-sight shear is measureable using mock images (\href{https://arxiv.org/abs/2310.11977}{Hogg et al. 2023}) and I am currently working on modelling SLACS strong lenses to make the first measurement of this quantity in real data. 
+%
+%I am also an active participant in the Lensing Working Group of the COSMOS-Web collaboration, a JWST Cycle 1 Treasury program obtaining near-infrared imaging of the COSMOS field. In this group, I have contributed to forecasting the expected number of strong lenses, identifying lens candidates in the raw data, and will soon start to work on modelling the first confirmed strong lens candidates. I expect that my contributions to the Strong Lensing Science Working Group in Euclid will be of a similar nature.
 
 \signature{Dr. Natalie Hogg}
 
